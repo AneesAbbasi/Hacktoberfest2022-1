@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+int main(){
+int order;
+int remain;
+int l=800;
+int m=200;
+int n=150;
+int total=l+m+n;
+int biry=100;
+int roll=120;
+int zinger=200;
+int all=total;
+cout<<"1) biryani     100 price "<<endl;
+cout<<"2) roll        120 price "<<endl;
+cout<<"3) zinger      200 price "<<endl;
+cout<<"all) roll+zinger+biryani "<<endl;
+cout<<"you current balance is "<<total<<endl;
+cin>>order;
+if(order==1){
+cout<<"you order 3 packate of birayani"<<endl;
+remain=total-biry*3;
+cout<<"our remainning balance is "<<remain<<endl;
+    
+}
+if(order==2){
+cout<<"you order 3 rolls"<<endl;
+remain=total-roll*3;
+cout<<"our remainning balance is "<<remain<<endl;
+
+
+}
+if(order==3){
+cout<<"you order 3 zinger"<<endl;
+remain=total-zinger*3;
+cout<<"our remainning balance is "<<remain<<endl;
+
+}
+if(order>3){
+	cout<<"sorry its not present in menu"<<endl;
+}
+}
